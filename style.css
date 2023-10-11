@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mediumslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.reset {
+    font-size: 1.5rem;
+    color:rebeccapurple;
+    letter-spacing: 0.2rem;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reset:focus {
+    color: white;
+    background-color: rebeccapurple;
+}
+
+.wrapper {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    cursor: pointer;
+    width: calc(100% / 4);
+    height: calc(100% / 4);
+    position: relative;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+
+.front {
+    font-size: 40px;
+    color: white;
+    /* display: none; */
+}
+
+.back {
+    font-size: 50px;
+    transform: rotateY(-180deg);
+    /* display: none; */
+}
